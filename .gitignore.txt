@@ -1,3 +1,4 @@
 # Database of images
 
-images/
+
+C:\Users\krist\BeCode\Projects\CNN_Project\images/
