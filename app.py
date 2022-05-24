@@ -9,8 +9,8 @@ from PIL import Image as pil_image
 
 # Keras
 
-from tensorflow.keras.applications.imagenet_utils import preprocess_input, decode_predictions
-from tensorflow.keras.models import Model , load_model
+from keras.applications.imagenet_utils import preprocess_input, decode_predictions
+from keras.models import Model , load_model
 from keras.preprocessing import image
 
 # Flask utils
@@ -21,7 +21,7 @@ from gevent.pywsgi import WSGIServer
 app = Flask(__name__)
 
 
-Model= load_model('mobileNet_new_model.h5')     
+Model= load_model('model.h5')     
 
 lesion_classes_dict = {
     0 : 'Melanocytic nevi',
@@ -36,7 +36,7 @@ lesion_classes_dict = {
 
 
 def model_predict(img_path, Model):
-    img = image.load_img(img_path, target_size=(224,224,3))
+    img = image.load_img(img_path, target_size=(128,128,3))
   
     #img = np.asarray(pil_image.open('img').resize((120,90)))
     #x = np.asarray(img.tolist())
@@ -86,7 +86,3 @@ def upload():
 
 if __name__ == '__main__':
     app.run(debug=True)
-    
-
-
-
