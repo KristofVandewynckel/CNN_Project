@@ -18,7 +18,7 @@ As mentioned before, the CNN will take an uploaded picture of a skin lesion and 
 6. Melanocytic nevi (nv)
 7. Vascular lesions (vasc)
 
-# Step 0: Installation of required software.
+# Installation of required software.
 
 Code Used:
 
@@ -32,3 +32,18 @@ Tensorflow
 Sklearn
 Flask
 Deployment through Heroku and Git.
+
+# File overview
+
+In our [Jupyter Notebook](https://github.com/KristofVandewynckel/CNN_Project/blob/main/Notebook_creating_the_model.ipynb) we can see how we trained our model by the various parameters we used. 
+Our [app.py](https://github.com/KristofVandewynckel/CNN_Project/blob/main/app.py) will launch our app making it possible for users to upload pictures and get a classification. This also uses the templates, static and uploads folder to create the aesthetic and buttons. (under construction)
+[procfile](https://github.com/KristofVandewynckel/CNN_Project/blob/main/Procfile) and [requirements.txt](https://github.com/KristofVandewynckel/CNN_Project/blob/main/requirements.txt) are used to deploy on Heroku.
+
+
+# If you want to use the app
+
+To use the app go to https://mole-detection-app.herokuapp.com/ and upload your picture of the mole to get a classification (under construction).
+
+# If you want to improve the model
+
+You can use the Jupyter notebook to change the model and preprocessing to train your own versions. Save this model and apply it in the app.py. Feel free to improve on this classification. 
