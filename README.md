@@ -1,5 +1,5 @@
 # CNN_Project
-By Kristof Vandewynckel
+By [Kristof Vandewynckel](https://www.linkedin.com/in/kristof-vandewynckel/)
 
 # Project Description
 A small project where we use the Kaggle Skin Cancer MNIST: HAM10000 dataset to create a Neural Network. The user can upload a picture of a skin lesion and get an estimate back on whether it requires medical attention or not. This project was assigned to us as part of the BeCode education program. The students are three and a half months into the education to become data scientists/ AI Operators and have just finished their Image Processing content. This is a first hands-on project to try and better grasp the essence of Convolutional Neural Networks (CNN from this point on) .
